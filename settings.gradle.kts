@@ -1,0 +1,1 @@
+rootProject.name = "sap-commerce-test-helper-plugin"

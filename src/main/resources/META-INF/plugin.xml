@@ -1,0 +1,43 @@
+<idea-plugin>
+    <id>devsidd.sapcommerce.test.runner.helper</id>
+    <name>SAP Commerce Test Helper</name>
+    <vendor email="devsidd.hybris@gmail.com">Siddhartha Kumar L.</vendor>
+    <description>
+        <![CDATA[
+            <p>
+              <b>Helps to run SAP Commerce (Hybris) Integration tests in IntelliJ.</b>
+            </p>
+
+            <p><b>Prerequisite</b></p>
+            <p>Pre-created modules using the <i>SAP Commerce Development Toolset Plugin.</i></p>
+
+            <p>
+               Automatically configures the required classpath to let integration tests run directly from IntelliJ.
+            </p>
+        ]]>
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <idea-version since-build="203"/>
+
+    <change-notes>
+        <![CDATA[
+            <div>Initial release.</div>
+            <br/>
+            <div>
+                <strong>Features:</strong>
+                <ul>
+                    <li>Run SAP Commerce tests from extension modules</li>
+                    <li>Automatic classpath resolution</li>
+                    <li>Automatic JVM configuration</li>
+                <ul>
+            </div>
+        ]]>
+    </change-notes>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="com.devsku.intellij.plugin.AllExtensionsStartupActivity"/>
+    </extensions>
+</idea-plugin>
